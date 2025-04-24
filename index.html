@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Patil - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            
+            <h1>Sakshi Patil</h1>
+            <p>Engineer | Innovator | Problem Solver</p>
+            <button onclick="openResume()">Download Resume</button>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://i.ibb.co/twzH7mbR/download-1.jpg" alt="Sakshi's Photo" class="images">
+            <div id="about-text">
+                <div id="slideshow">
+                    <div class="slide">
+                        <p>First-year engineering student with a passion for technology and problem-solving.</p>
+                    </div>
+                    <div class="slide">
+                        <p>Previous defense aspirant with strong dedication and discipline.</p>
+                    </div>
+                    <div class="slide">
+                        <p>Exploring innovative technologies and eager to integrate them into engineering projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies-container">
+            <div class="hobby-card">
+                <img src="https://i.ibb.co/LzjcVX9y/image-41-3-1712752581555-compressed.png" alt="Sports">
+                <h3>Sports</h3>
+                <p>Athletics and fitness have been a big part of my life. I love the discipline and teamwork they foster.</p>
+            </div>
+            <div class="hobby-card">
+                <img src="https://i.ibb.co/jvvgQJr6/download.jpg" alt="Public Speaking">
+                <h3>Public Speaking</h3>
+                <p>Debates and public speaking are passions I developed through my defense aspirations.</p>
+            </div>
+            <div class="hobby-card">
+                <img src="https://i.ibb.co/jZv8jj1q/images.jpg" alt="Coding">
+                <h3>Coding</h3>
+                <p>I'm exploring coding and technology, focusing on Python and software development.</p>
+            </div>
+            <div class="hobby-card">
+                <img src="https://i.ibb.co/kgHwSHTH/cover-song.webp" alt="Singing">
+                <h3>Singing</h3>
+                <p>Music has always been a source of creativity and joy for me. Singing keeps me grounded and inspired.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="achievements-gallery">
+            <div class="achievement-card">
+                <img src="https://i.ibb.co/cKyb6x2s/sta-je-html.jpg" alt="HTML Certification">
+                <p>HTML </p>
+            </div>
+            <div class="achievement-card">
+                <img src="https://i.ibb.co/JFBjRCsR/1-V-Jp13-Lvt-Vc2-Ii-Y2fp4q-Yw.jpg" alt="Web Development">
+                <p>Web Development</p>
+            </div>
+            <div class="achievement-card">
+                <img src="https://i.ibb.co/Z1BjJNFB/certificate-202401070084-mitaoe-ac-in-c759e2d5-9c52-420f-8a58-5822898133c9.jpg" alt="Cisco Certification">
+                <p>CISCO</p>
+            </div>
+            <div class="achievement-card">
+                <img src="https://i.ibb.co/9mVk0fc6/java-binary-code-gears-programming-coding-development-by-bluebay2014-gettyimages-1040871468-2400x160.webp" alt="JAVA">
+                <p>JAVA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-bar">
+            <p>Want to get in touch?</p>
+            <p>Email: <a href="mailto:sakshipatil7775@gmail.com">sakshipatil7775@gmail.com</a></p>
+            <p>Phone: <a href="tel:+917775945570">+91 7775945570</a></p>
+        </div>
+    </section>
+
+    <script>
+        function openResume() {
+            window.open('https://i.ibb.co/2Y62FRGx/RESUME.jpg', '_blank');
+        }
+
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        setInterval(() => {
+            slides[slideIndex].style.display = "none"; 
+            slideIndex = (slideIndex + 1) % slides.length; 
+            slides[slideIndex].style.display = "block";
+        }, 3000); // Slideshow interval
+    </script>
+</body>
+</html>
